@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>AUDITOR ENTRY</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+    <!-- Basic inline styling -->
+  </head>
+  <style>
+    body,
+    html {
+      background-color: black;
+      color: white;
+    }
+    h1 {
+      font-family: Papyrus;
+    }
+    label {
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+
+  <body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Auditee Information</h1>
+
+      <form
+       
+        action=	"https://sheetdb.io/api/v1/suxuxlp3scbk3"
+        method="post"
+        id="sheetdb-form"
+        name="submit-to-google-sheet"
+      >
+
+      <div class="row mb-4">
+        <div class="col-md-6 pe-5">
+          <label for="Name1" class="form-label">Select Name:</label>
+          <select
+            name="data[Name1]"
+            id="Name1"
+            class="form-select btn-primary"
+          
+          >
+            <option value="" selected disabled>Select Name</option>
+            <option value="vishnu">Vishnu</option>
+            <option value="Naresh">Naresh</option>
+            <option value="Navaneeth">Navaneeth</option>
+            <option value="Ivon">Ivon</option>
+            <option value="Sanjay">Sanjay</option>
+            <option value="Prajot">Prajot</option>
+            <option value="Rajesh">Rajesh</option>
+            <option value="Jateen">Jateen</option>
+            <option value="Rohit">Rohit</option>
+            <option value="Prasad">Prasad</option>
+            <option value="Rathan">Rathan</option>
+            <option value="Nikhil">Nikhil</option>
+          </select>
+        </div>
+
+        <!-- Form row for Sports selection -->
+        <div class="col-md-6 pe-5">
+          <label for="type" class="form-label">Select type:</label>
+          <select id="type"  name="data[type]" class="form-select">
+            <option value="" selected disabled>Select audit type</option>
+            <option
+              value=" Tear down audit
+            "
+            >
+              Tear down audit (Quality)
+            </option>
+            <option
+              value="Tear down audit (Process)
+            "
+            >
+              Tear down audit (Process)
+            </option>
+            <option
+              value="Process audit (Process)
+            "
+            >
+              Process audit (Process)
+            </option>
+            <option
+              value=" Process Audit (Quality)
+            "
+            >
+              Process Audit (Quality)
+            </option>
+            <option
+              value="LPA
+            "
+            >
+              LPA
+            </option>
+            <option
+              value="LSA
+            "
+            >
+              LSA
+            </option>
+            <option
+              value="5S Zonal audit
+
+            "
+            >
+              5S Zonal audit
+            </option>
+            <option
+              value="Standard work audit 
+
+            "
+            >
+              Standard work audit
+            </option>
+            <option
+              value="Maintainece PM audit
+
+            "
+            >
+              Maintainece PM audit
+            </option>
+            <option
+              value="Gemba
+
+            "
+            >
+              Gemba
+            </option>
+    
+         
+            <option
+              value="Monthly 5S audit
+
+
+            "
+            >
+            Monthly 5S audit
+
+            </option>
+          </option>  
+          <option
+            value=" Kaizen audit
+
+
+          "
+          >
+          Kaizen audit
+
+          </option>  </option>
+          <option
+            value="Cross audit 
+
+
+          "
+          >
+          Cross audit 
+
+          </option>  </option>
+          <option
+            value="BOP audit
+
+
+          "
+          >
+          BOP audit
+
+          </option> 
+          <option
+            value="Others
+
+
+          "
+          >
+          Others
+
+          </option>  </option>
+          <option
+            value="Misc
+
+          "
+          >
+          Misc
+          </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 pe-5">
+          <label for="image" class="form-label">Choose image:</label>
+          <input class="form-control"  name="data[image]" type="file" id="image" accept="image/*" />
+        </div>
+        <div class="col-md-6 pe-5">
+          <label for="status" class="form-label">Select Status:</label>
+          <select  name="data[status]" id="status" class="form-select btn-primary">
+            <option value="" selected disabled>Status</option>
+            <option value="Completed">Completed</option>
+            <option value="WIP">WIP</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </div>
+      </div>
+
+      <!--row-->
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-6">
+          <label for="actions" class="form-label text-center">Actions:</label>
+          <div class="d-flex justify-content-center">
+            <textarea
+            name="data[actions]"
+              id="actions"
+              class="form-control rounded"
+              rows="2"
+              placeholder="Enter actions to be taken in bullet format"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form row for the second text area -->
+
+      <div class="row justify-content-center">
+        <div class="col-md-1 text-center">
+          <button class="btn btn-primary" >
+            Submit
+          </button>
+        </div>
+        <div class="col-md-2 text-center">
+          <!-- Link 1 -->
+          <a
+            href="index.html"
+            class="btn btn-danger "
+            target="_blank"
+          
+          >
+            Back To Home Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      
+
+        
+      </form>
+   
+
+    <script>
+      const scriptURL = "	https://sheetdb.io/api/v1/suxuxlp3scbk3";
+      const form = document.forms["submit-to-google-sheet"];
+
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            alert("Data submitted")
+            // sucess.innerHTML = "Last calibration done on   " + "   " + Date();
+          })
+          .catch((error) => {
+            alert("Not submitted")
+            setTimeout(function () {
+              sucess.innerHTML = "";
+            }, 2000);
+          });
+      });
+      function updateSports() {
+    const name = document.getElementById("Name1").value;
+    const sportsDropdown = document.getElementById("type");
+
+    // Clear previous options
+    sportsDropdown.innerHTML = '<option value="">--Select Type--</option>';
+
+    if (name === "Ivon") {
+      const option1 = new Option("5s", "5s");
+      const option2 = new Option("Process Audit", "Process Audit");
+      const option3 = new Option("Process Audit", "Process Audit");
+      const option4 = new Option(" Standard Work", "Process Audit");
+      const option5 = new Option("5s zonal audit", "Process Audit");
+      const option6 = new Option("Process Audit", "Process Audit");
+      sportsDropdown.add(option1);
+      sportsDropdown.add(option2);
+      sportsDropdown.add(option3);
+      sportsDropdown.add(option4);
+      sportsDropdown.add(option5);
+      sportsDropdown.add(option6);
+    }
+  }
+       
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>  
+  </body>
+</html>

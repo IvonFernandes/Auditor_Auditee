@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auditee Information</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body,
+    html {
+      background-color: black;
+      color: white;
+    }
+    h1 {
+      font-family: Papyrus;
+    }
+    label {
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Auditor Information</h1>
+      <form
+       
+      action="https://sheetdb.io/api/v1/0a6cwnby659qw"
+      method="post"
+      id="sheetdb-form"
+      name="submit-to-google-sheet"
+    >
+
+      <!-- Form row for Name selection -->
+      <div class="row mb-4">
+        <div class="col-md-6 pe-5">
+          <label for="date" class="form-label">Date:</label>
+          <input name="data[date]" type="date" class="form-control" />
+        </div>
+
+        <!-- Form row for Sports selection -->
+        <div class="col-md-6 pe-5">
+          <label for="week" class="form-label">Week Number:</label>
+          <select name="data[week]" id="week" class="form-select">
+            <option value="Week-1">Week-1</option>
+            <option value="Week-2">Week-2</option>
+            <option value="Week-3">Week-3</option>
+            <option value="Week-4">Week-4</option>
+            <option value="Week-5">Week-5</option>
+            <option value="Week-6">Week-6</option>
+            <option value="Week-7">Week-7</option>
+            <option value="Week-8">Week-8</option>
+            <option value="Week-9">Week-9</option>
+            <option value="Week-10">Week-10</option>
+            <option value="Week-11">Week-11</option>
+            <option value="Week-12">Week-12</option>
+            <option value="Week-13">Week-13</option>
+            <option value="Week-14">Week-14</option>
+            <option value="Week-15">Week-15</option>
+            <option value="Week-16">Week-16</option>
+            <option value="Week-17">Week-17</option>
+            <option value="Week-18">Week-18</option>
+            <option value="Week-19">Week-19</option>
+            <option value="Week-20">Week-20</option>
+            <option value="Week-21">Week-21</option>
+            <option value="Week-22">Week-22</option>
+            <option value="Week-23">Week-23</option>
+            <option value="Week-24">Week-24</option>
+            <option value="Week-25">Week-25</option>
+            <option value="Week-26">Week-26</option>
+            <option value="Week-27">Week-27</option>
+            <option value="Week-28">Week-28</option>
+            <option value="Week-29">Week-29</option>
+            <option value="Week-30">Week-30</option>
+            <option value="Week-31">Week-31</option>
+            <option value="Week-32">Week-32</option>
+            <option value="Week-33">Week-33</option>
+            <option value="Week-34">Week-34</option>
+            <option value="Week-35">Week-35</option>
+            <option value="Week-36">Week-36</option>
+            <option value="Week-37">Week-37</option>
+            <option value="Week-38">Week-38</option>
+            <option value="Week-39">Week-39</option>
+            <option value="Week-40">Week-40</option>
+            <option value="Week-41">Week-41</option>
+            <option value="Week-42">Week-42</option>
+            <option value="Week-43">Week-43</option>
+            <option value="Week-44">Week-44</option>
+            <option value="Week-45">Week-45</option>
+            <option value="Week-46">Week-46</option>
+            <option value="Week-47">Week-47</option>
+            <option value="Week-48">Week-48</option>
+            <option value="Week-49">Week-49</option>
+            <option value="Week-50">Week-50</option>
+            <option value="Week-51">Week-51</option>
+            <option value="Week-52">Week-52</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 pe-5">
+          <label for="shift" class="form-label">Shift</label>
+          <select name="data[shift]" id="shift" class="form-select btn-primary">
+            <option value="" selected disabled>Select Shift</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+          </select>
+        </div>
+        <div class="col-md-6 pe-5">
+          <label for="type" class="form-label">Select Audit Type:</label>
+          <select name="data[type]" id="type" class="form-select btn-primary">
+            <option value="" selected disabled>Select audit type</option>
+            <option
+              value=" Tear down audit
+            "
+            >
+              Tear down audit (Quality)
+            </option>
+            <option
+              value="Tear down audit (Process)
+            "
+            >
+              Tear down audit (Process)
+            </option>
+            <option
+              value="Process audit (Process)
+            "
+            >
+              Process audit (Process)
+            </option>
+            <option
+              value=" Process Audit (Quality)
+            "
+            >
+              Process Audit (Quality)
+            </option>
+            <option
+              value="LPA
+            "
+            >
+              LPA
+            </option>
+            <option
+              value="LSA
+            "
+            >
+              LSA
+            </option>
+            <option
+              value="5S Zonal audit
+
+            "
+            >
+              5S Zonal audit
+            </option>
+            <option
+              value="Standard work audit 
+
+            "
+            >
+              Standard work audit
+            </option>
+            <option
+              value="Maintainece PM audit
+
+            "
+            >
+              Maintainece PM audit
+            </option>
+            <option
+              value="Gemba
+
+            "
+            >
+              Gemba
+            </option>
+    
+         
+            <option
+              value="Monthly 5S audit
+
+
+            "
+            >
+            Monthly 5S audit
+
+            </option>
+          </option>  
+          <option
+            value=" Kaizen audit
+
+
+          "
+          >
+          Kaizen audit
+
+          </option>  </option>
+          <option
+            value="Cross audit 
+
+
+          "
+          >
+          Cross audit 
+
+          </option>  </option>
+          <option
+            value="BOP audit
+
+
+          "
+          >
+          BOP audit
+
+          </option> 
+          <option
+            value="Others
+
+
+          "
+          >
+          Others
+
+          </option>  </option>
+          <option
+            value="Misc
+
+          "
+          >
+          Misc
+          </option>
+          </select>
+        </div>
+      </div>
+
+      <!--row-->
+      <div class="row mb-4">
+        <div class="col-md-6 pe-5">
+          <label for="area"  class="form-label">Area:</label>
+          <select id="area" name="data[area]" class="form-select">
+            <option value="" selected disabled >Select Area</option>
+            <option value=""  disabled>Spinning</option>
+           
+            <option value="DEN 650" >DEN 650</option>
+            <option value="CIRCLE CUTTING" >CIRCLE CUTTING</option>
+            <option value="PLB 1200" >PLB 1200</option>
+            <option value="PROSPER 1000" >PROSPER 1000</option>
+            <option value="PROSPER 800" >PROSPER 800</option>
+            <option value="PAINT SYSTEM" >PAINT SYSTEM</option>
+            <option value="LOADING" >LOADING</option>
+            <option value="PRE-TREATMENT AND PAINTING">PRE-TREATMENT AND PAINTING</option>
+            <option value="UNLOADING AND INSPECTION" >UNLOADING AND INSPECTION</option>
+            <option value=""  disabled>PACKING</option>
+            <option value="3FT PACKING" >3FT PACKING</option>
+            <option value="1/2FT PACKING" >1/2FT PACKING</option>
+            <option value="4/6FT PACKING" >4/6FT PACKING</option>
+            <option value="KITTING" >KITTING</option>
+            <option value="VINTIX" >VINTIX</option>
+            <option value=""  disabled>FEED</option>
+            <option value="TITAN" >TITAN</option>
+            <option value="FEED" >FEED</option>
+            <option value="DUAL BAND">DUAL BAND</option>
+            <option value="HELAX"  disabled>HELAX</option>
+            <option value="PREP AND CUTTING" >PREP AND CUTTING</option>
+            <option value="ASSEMBLY" >ASSEMBLY</option>
+            <option value="PACKING" >PACKING</option>
+
+            
+
+        </select>
+        </div>
+        <div class="col-md-6 pe-5">
+          <label for="responsible" class="form-label">Person responsible</label>
+          
+            <input type="text" name="data[responsible]" class="form-control" placeholder="Enter Name of the person held responsible">
+        </div>
+
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-6 pe-5">
+          <label for="observations" class="form-label">Observations</label>
+          <input type="text" name="data[observations]" class="form-control" placeholder="Enter Observations">
+
+        </div>
+        <div class="col-md-6 pe-5">
+          <label for="image" class="form-label">Choose image:</label>
+          <input class="form-control" name="data[image]" type="file" id="image" accept="image/*" />
+        </div>
+      </div>
+
+      <!-- Form row for the second text area -->
+
+      <div class="row justify-content-center">
+        <div class="col-md-1 text-center">
+          <button class="btn btn-primary mt-3">
+            Submit
+          </button>
+        </div>
+        <div class="col-md-2 text-center mt-3">
+          <!-- Link 1 -->
+          <a
+            href="index.html"
+            class="btn btn-danger "
+            target="_blank"
+          
+          >
+            Back To Home Page
+          </a>
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<script>
+        const scriptURL = "https://sheetdb.io/api/v1/0a6cwnby659qw";
+      const form = document.forms["submit-to-google-sheet"];
+
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            alert("Data submitted")
+            // sucess.innerHTML = "Last calibration done on   " + "   " + Date();
+          })
+          .catch((error) => {
+            alert("Not submitted")
+            setTimeout(function () {
+              sucess.innerHTML = "";
+            }, 2000);
+          });
+      });
+</script>
